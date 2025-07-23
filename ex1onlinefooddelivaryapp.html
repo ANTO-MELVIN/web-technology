@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AM - Online Food Delivery</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://img.theweek.in/content/dam/week/week/news/india/images/2024/10/27/vijay-tvk-party-conference-pti.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #2d2d2d;
+        }
+        header, footer {
+            background-color: red;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #222;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.93);
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 25px;
+            border-radius: 12px;
+        }
+        h2 {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 6px;
+        }
+        table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #aaa;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input, select, button {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            max-width: 400px;
+            display: block;
+        }
+        a {
+            color: #2d2d2d;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TVK - Online Food Delivery</h1>
+        <p>Fast. Fresh. Friendly.</p>
+    </header>
+    <nav>
+        <a href="#menu">Menu</a>
+        <a href="#order">Order</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <p><strong>Note:</strong> Filtering is disabled in this version (no JavaScript).</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dish</th>
+                        <th>Category</th>
+                        <th>Price (₹)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Margherita Pizza</td><td>Veg</td><td>299</td></tr>
+                    <tr><td>Chicken Biryani</td><td>Non-Veg</td><td>349</td></tr>
+                    <tr><td>Paneer Butter Masala</td><td>Veg</td><td>259</td></tr>
+                    <tr><td>Fish Fingers</td><td>Non-Veg</td><td>279</td></tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="order">
+            <h2>Order Your Food</h2>
+            <form method="post" action="#">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+
+                <label for="dish">Select Dish:</label>
+                <select id="dish" name="dish" required>
+                    <option value="">-- Choose a Dish --</option>
+                    <option value="Margherita Pizza">Margherita Pizza</option>
+                    <option value="Chicken Biryani">Chicken Biryani</option>
+                    <option value="Paneer Butter Masala">Paneer Butter Masala</option>
+                    <option value="Fish Fingers">Fish Fingers</option>
+                </select>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" value="1" min="1" required>
+                <button type="submit">Place Order</button>
+            </form>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Have questions or need help with your order?</p>
+            <p>
+                📧 Email: <a href="mailto:support@AM.com">support@AM.com</a><br>
+                📞 Call: <a href="tel:+911234567890">+91 12345 67890</a>
+            </p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 TVK - All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
